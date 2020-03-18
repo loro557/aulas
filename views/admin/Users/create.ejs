@@ -1,0 +1,43 @@
+<%- include('../../partials/header.ejs') %>
+<%- include('../../partials/navbar.ejs') %>
+<%- include('../../partials/topo.ejs') %>
+
+
+
+<div class="col col-sm-12 py-5 bg-light shadow-lg">
+	<h1 class="text-center">User formulario</h1>
+
+</div>
+
+<div class="container">
+	<div class="row mt-3 mb-5">
+	<div class="col col-sm-12 col-md-6">
+		<div class="card">
+		<div class="card-header">
+			CRIAR USUARIO
+		</div>
+		<div class="card-body">
+			<form action="/users/create" method="post">
+  <div class="form-group">
+    <label for="exampleInputEmail1">Endereço de email</label>
+    <input type="email" class="form-control" name="email" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Seu email">
+    
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Senha</label>
+    <input type="password" class="form-control" name="password" id="exampleInputPassword1" placeholder="Senha">
+  </div>
+  
+  <button type="submit" class="btn btn-primary btn-block">Enviar</button>
+</form>
+		</div>
+	</div>
+	</div>
+	<div class="col col-sm-12 col-md-6">
+		<img src="/img/user.jpg" class="img-fluid">
+	</div>
+</div>
+</div>
+
+
+<%- include('../../partials/footer.ejs') %>
